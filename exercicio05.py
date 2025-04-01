@@ -6,4 +6,7 @@ medianota = (nota1 + nota2 + nota3) /3
 if medianota >=7:
     print(f"Média: {medianota:.2f}, você foi Aprovado!")
 else:
-    print(f"Média: {medianota:.2f}, você foi Reprovado.")
+    if medianota <4:
+        print(f"Média: {medianota:.2f}, você foi Reprovado.")
+    else:
+        print(f"Média: {medianota:.2f}, você está de Recuperação.")
